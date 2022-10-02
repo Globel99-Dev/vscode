@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: cadetblue;
 }
 
 table,
@@ -7,5 +8,10 @@ th,
 td {
   border-style: dotted;
   border-collapse: collapse;
-  border-color: red;
+  border-color: cadetblue;
+  background-color: cadetblue;
+}
+
+#copyright {
+  text-align: right;
 }
