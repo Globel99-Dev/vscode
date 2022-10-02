@@ -85,7 +85,43 @@
           ></iframe>
         </td>
       </tr>
-
+      <tr>
+        <td></td>
+        <td>
+          <h2>Put local files on a repository</h2>
+          <pre>
+            <code>
+              git -C "~/localdirectory" init
+            </code>
+          </pre>
+          Change "localdirectory" to your work directory.
+          <pre>
+            <code>
+              gh repo create
+            </code>
+          </pre>
+          And follow the interactive menu to create a new repository on Github
+          or to add localfiles to a repo.
+          <pre>
+            <code>
+              git add .
+            </code>
+          </pre>
+          Add all the files to the repo.
+          <pre>
+            <code>
+              git commit -m "Message to show"
+            </code>
+          </pre>
+          Prepare the commit and add a message.
+          <pre>
+            <code>
+              git push --set-upstream origin HEAD
+            </code>
+          </pre>
+          To upload the files to the repo.
+        </td>
+      </tr>
       <tr>
         <td id="copyright" colspan="2">
           Globel99-Dev ltd. <sup>&copy;</sup> 10/2022
