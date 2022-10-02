@@ -1,3 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+table,
+th,
+td {
+  border-style: dotted;
+  border-collapse: collapse;
+  border-color: red;
+}
