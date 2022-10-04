@@ -18,16 +18,16 @@ We are setting an image, it's psize and make it centered */
 }
 
 #git {
-  background-color: cadetblue;
+  background-color: lightgray;
 }
 
-table,
-th,
-td {
+.git {
   border-style: dotted;
   border-collapse: collapse;
-  border-color: cadetblue;
-  background-color: cadetblue;
+  border-color: lightgray;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #copyright {
