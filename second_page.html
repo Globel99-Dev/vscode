@@ -49,5 +49,21 @@
         is the CSS ability to select an element inside of another one.
       </p>
     </div>
+    <pre>
+      <code>
+        p strong i {color: black}
+
+        p, strong, i {color: black}
+      </code>
+    </pre>
+    <p>
+      The two lines above seems the same thing but they are not. In the first
+      line we are targeting a nested element.<br />
+      <br />
+      We are targeting the element "i" inside in "strong" that is inside a "p"
+      element. <br />
+      This is a nested element. In the second line we are targeting all the
+      elememts "p", "strong" and "i".
+    </p>
   </body>
 </html>

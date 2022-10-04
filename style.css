@@ -22,3 +22,21 @@ td {
 #links {
   vertical-align: top;
 }
+
+a {
+  color: cornflowerblue;
+}
+
+a:hover {
+  color: brown;
+  text-transform: capitalize;
+}
+
+a:active {
+  color: chartreuse;
+}
+
+a:visited {
+  color: yellow;
+  text-transform: lowercase;
+}
