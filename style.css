@@ -26,12 +26,25 @@ We are setting an image, it's psize and make it centered */
   border-collapse: collapse;
   border-color: lightgray;
   background-color: lightgray;
-  margin-left: auto;
+}
+
+.git,
+.box {
   margin-right: auto;
+  margin-left: auto;
+}
+
+.box {
+  display: block;
+  width: 50%;
 }
 
 #copyright {
   text-align: right;
+}
+
+.sub {
+  border-top: 1px dashed #000000;
 }
 
 #links {
@@ -80,11 +93,14 @@ div.block {
   height: 200px;
 }
 
-.code {
-  background-color: ;
-  font-size: 20px;
+.code,
+.test1 {
+  font-size: 15px;
   color: white;
   background-color: rgb(45, 45, 45, 0.7);
+}
+
+.code {
   width: 600px;
 }
 
@@ -93,13 +109,32 @@ div.block {
 }
 
 .punctuation {
-  color: #ccc;
+  color: rgb(0, 0, 0);
 }
 
 .property {
-  color: #f8c555;
+  color: #be8a17;
 }
 
 .selector {
   color: #cc99cd;
+}
+
+.test {
+  width: 40%;
+  height: 300px;
+  border: 2px solid green;
+  background-image: url("images/job.jpg");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50% 0 50% 0;
+  box-shadow: 6px 6px 15px inset #444444;
+}
+
+.test1,
+.test {
+  display: inline-block;
+}
+
+.test1 {
 }

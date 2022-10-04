@@ -143,8 +143,8 @@
         <code>
           <span class="selector">.inline-block-element</span> <span class="punctuation">{</span> 
            <span class="property">display</span><span class="punctuation">:</span> inline-block<span class="punctuation">;</span>
-           <span class="property">width</span><span class="punctuation">:</span> 1000px; <span class="comment">/* It will work */</span>
-           <span class="property">height</span><span class="punctuation">:</span> 1000px; <span class="comment">/* It will work */</span>
+           <span class="property">width</span><span class="punctuation">:</span> 1000px<span class="punctuation">;</span> <span class="comment">/* It will work */</span>
+           <span class="property">height</span><span class="punctuation">:</span> 1000px<span class="punctuation">;</span> <span class="comment">/* It will work */</span>
          <span class="punctuation">}</span>
         </code></pre>
       <h2><code>block</code></h2>
@@ -165,5 +165,125 @@
         <li><code>section</code></li>
       </ul>
     </div>
-  </body>
+    <hr />
+    <div class="test"></div>
+    <div class="test1">
+      <span class="punctuation">CSS code for the image on the left.</span><br />
+      <span class="punctuation"
+        >In HTML there is an empty div with class="test1"</span
+      >
+      <pre><code>
+        <span class="selector">.class selector</span> <span class="punctuation">{</span>
+          <span class="property">width</span><span class="punctuation">:</span> 40%<span class="punctuation">;</span>
+          <span class="property">height</span><span class="punctuation">:</span> 300px<span class="punctuation">;</span>
+          <span class="property">border</span><span class="punctuation">:</span>  2px solid green<span class="punctuation">;</span>
+          <span class="property">background-image</span><span class="punctuation">:</span>  url("images/job.jpg")<span class="punctuation">;</span>
+          <span class="property">background-position</span><span class="punctuation">:</span>  center center<span class="punctuation">;</span>
+          <span class="property">background-size</span><span class="punctuation">:</span>  cover<span class="punctuation">;</span>
+          <span class="property">border-radius</span><span class="punctuation">:</span>  50% 0 50% 0<span class="punctuation">;</span>
+          <span class="property">box-shadow</span><span class="punctuation">:</span>  6px 6px 15px inset #444444<span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+      </code></pre>
+    </div>
+    <hr />
+    <h1>BOX MODEL</h1>
+    <p>
+      In CSS, the term
+      <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank"
+        >"box model"</a
+      >
+      is used when talking about design and layout.
+    </p>
+    <p>
+      The CSS box model is essentially a box that wraps around every HTML
+      element. It consists of: margins, borders, padding, and the actual
+      content. The image below illustrates the box model:
+    </p>
+    <img src="/images/box-model.webp" alt="Box-model" class="box" />
+    <hr class="sub" />
+    <h2>
+      <a href="https://www.w3schools.com/css/css_padding.asp" target="_blank"
+        >CSS padding</a
+      >
+    </h2>
+    <p>
+      Padding is used to create space around an element's content, inside of any
+      defined borders.
+    </p>
+    <p>
+      The CSS <code>padding</code> properties are used to generate space around
+      an element's content, inside of any defined borders.
+    </p>
+    <p>
+      With CSS, you have full control over the padding. There are properties for
+      setting the padding for each side of an element (top, right, bottom, and
+      left).
+    </p>
+    <hr />
+    <h2>
+      <a href="https://www.w3schools.com/css/css_margin.asp" target="_blank"
+        >CSS margins</a
+      >
+    </h2>
+    <p>
+      Margins are used to create space around elements, outside of any defined
+      borders.
+    </p>
+    <p>
+      The CSS <code>margin</code> properties are used to create space around
+      elements, outside of any defined borders.
+    </p>
+    <p>
+      With CSS, you have full control over the margins. There are properties for
+      setting the margin for each side of an element (top, right, bottom, and
+      left).
+    </p>
+    <hr />
+    <h2>
+      <a href="https://www.w3schools.com/css/css_border.asp" target="_blank"
+        >CSS borders</a
+      >
+    </h2>
+    <p>
+      The CSS border properties allow you to specify the style, width, and color
+      of an element's border.
+    </p>
+    <p>
+      The <code>border-style</code> property specifies what kind of border to
+      display.
+    </p>
+    <p>The following values are allowed:</p>
+    <ul>
+      <li><code>dotted</code> - Defines a dotted border.</li>
+      <li><code>dashed</code> - Defines a dashed border.</li>
+      <li><code>solid</code> - Defines a solid border.</li>
+      <li><code>double</code> - Defines a double border.</li>
+      <li>
+        <code>groove</code> - Defines a groove border. The effect depend on the
+        border-color value.
+      </li>
+      <li>
+        <code>ridge</code> - Defines a ridge border. The effect depend on the
+        border-color value.
+      </li>
+      <li>
+        <code>inset</code> - Defines a inset border. The effect depend on the
+        border-color value.
+      </li>
+      <li>
+        <code>outset</code> - Defines a outset border. The effect depend on the
+        border-color value.
+      </li>
+      <li><code>none</code> - Defines no border.</li>
+      <li><code>hidden</code> - Defines a hidden border.</li>
+    </ul>
+    <hr class="sub" />
+    <p>To center a block element we set on css margin: auto and display: block:</p>
+    <pre><code>
+      <span class="selector">.class selector</span> <span class="punctuation">{</span>
+        <span class="property">margin</span><span class="punctuation">:</span> auto<span class="punctuation">;</span>
+        <span class="property">display</span><span class="punctuation">:</span> block<span class="punctuation">;</span>
+        <span class="punctuation">}</span>
+  
+   </body>
 </html>
