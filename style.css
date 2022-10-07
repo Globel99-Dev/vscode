@@ -140,6 +140,10 @@ div.block {
   display: inline-block;
 }
 
+.rocketman {
+  background-color: #000000;
+}
+
 .logo,
 .services,
 .contact,
@@ -155,13 +159,36 @@ div.block {
   padding: 10px 50px;
 }
 
-.background {
-  background-image: url("images/Papusas.jpg");
+.pupusas {
+  display: inline-block;
   width: 100%;
-  height: 900px;
-  background-size: cover;
+  position: relative;
+  text-align: center;
 }
 
-.rocketman {
-  background-color: #000000;
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 500px;
+  left: 150px;
+  font-size: 50px;
+}
+
+.parag {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 700px;
+  left: 150px;
+  font-size: 40px;
+}
+
+.button {
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 900px;
+  left: 150px;
+  font-size: 50px;
+  border: none;
+  padding: 10px 20px;
 }
