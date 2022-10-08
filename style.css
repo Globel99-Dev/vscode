@@ -130,10 +130,10 @@ div.block {
   box-shadow: 6px 6px 15px inset #444444;
 }
 
-.css {
+/*.css {
   background-image: url("images/job.jpg");
-  background-size: cover;
-}
+  background-size: auto;
+}*/
 
 .test1,
 .test {
