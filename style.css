@@ -65,7 +65,7 @@ a:active {
 }
 
 a:visited {
-  color: yellow;
+  color: rgb(114, 114, 114);
   text-transform: lowercase;
 }
 
@@ -141,20 +141,67 @@ div.block {
 }
 
 .rocketman {
-  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  background-color: #adadad;
 }
 
 .navbar {
-  height: 230px;
+  height: 270px;
+  display: flex;
+  color: #fff;
 }
 
-.logo,
+.navbar .logo {
+  font-size: 24px;
+  padding: 20px;
+  margin-left: 25px;
+}
+
+.navbar .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+}
+
+ul li {
+  padding: 20px;
+  list-style: none;
+}
+
+ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section {
+  height: 300px;
+}
+
+.background {
+  background-image: url("images/pupusas2.webp");
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+}
+
+/* .logo,
 .services,
 .contact,
 .course {
   display: inline-block;
   border: 1px solid red;
-}
+} 
 
 .logo {
   margin: 10px 0px;
@@ -173,7 +220,7 @@ div.block {
 .course {
   font-size: 52px;
   padding: 10px 50px;
-}
+} */
 
 .pupusas {
   display: inline-block;
