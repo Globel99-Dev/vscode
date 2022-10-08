@@ -144,12 +144,28 @@ div.block {
   background-color: #000000;
 }
 
+.navbar {
+  height: 230px;
+}
+
 .logo,
 .services,
 .contact,
 .course {
   display: inline-block;
   border: 1px solid red;
+}
+
+.logo {
+  margin: 10px 0px;
+  padding: 40px 20px;
+}
+
+.services,
+.contact,
+.course {
+  margin: 0px 10px;
+  pad: 70px 0px;
 }
 
 .services,
