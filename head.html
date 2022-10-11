@@ -7,6 +7,10 @@
     <title>Test</title>
   </head>
   <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     .container {
       display: inline-block;
     }
@@ -19,13 +23,11 @@
     .segundo,
     .tercero,
     .cuarto {
-      /*display: flex;*/
+      box-sizing: border-box;
       display: inline-block;
       width: 200px;
       height: 200px;
-      border-radius: 4px;
       border: 6px solid #2b272a;
-      margin: 0px 0px;
     }
 
     .primero {
@@ -43,6 +45,55 @@
     .cuarto {
       background-color: green;
     }
+
+    .box,
+    .box1,
+    .outline,
+    .offset,
+    .out-offset,
+    .text-s,
+    .div-text-s {
+      display: inline-block;
+    }
+
+    .offset,
+    .without,
+    .img-text-s {
+      width: 500px;
+      height: 400px;
+    }
+
+    /*.div-text-s {
+      width: 100px;
+      height: 300px;
+    }*/
+
+    .box {
+      border: 5px solid red;
+      height: 200px;
+      width: 200px;
+      padding: 30px;
+      box-sizing: content-box;
+      outline: 5px solid black;
+      outline-offset: 10px;
+      margin: 30px;
+    }
+
+    .box1 {
+      border: 5px solid red;
+      height: 200px;
+      width: 200px;
+      padding: 30px;
+      box-sizing: content-box;
+      outline: 5px solid black;
+      /*outline-offset: 10px;*/
+      margin: 30px;
+    }
+
+    .text-s {
+      font-size: 40px;
+      text-shadow: 10px 10px 0 blue;
+    }
   </style>
   <body>
     <div><a href="index.html">Home</a></div>
@@ -54,5 +105,103 @@
       <div class="tercero">Tercero</div>
       <div class="cuarto">Cuarto</div>
     </div>
+    <div>
+      <h1>Box-Sizing</h1>
+      <p>
+        The
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing"
+          target="_blank"
+          ><code>box-sizing</code></a
+        >
+        CSS property sets how the total width and height of an element is
+        calculated.
+      </p>
+      <p>
+        By default in the CSS box model, the <code>width</code>and
+        <code>height</code> you assign to an element is applied only to the
+        element's content box. If the element has any border or padding, this is
+        then added to the <code>width</code>and <code>height</code> to arrive at
+        the size of the box that's rendered on the screen. This means that when
+        you set <code>width</code>and <code>height</code>, you have to adjust
+        the value you give to allow for any border or padding that may be added.
+        For example, if you have four boxes with <code>width: 25%;</code>, if
+        any has left or right padding or a left or right border, they will not
+        by default fit on one line within the constraints of the parent
+        container.
+      </p>
+      <p>Tipically we will use <code>border-box</code></p>
+      <br />
+      <img
+        src="images/Screenshot 2022-10-11 at 22-22-20 box-sizing - CSS Cascading Style Sheets MDN.png"
+        alt="box-sizing"
+      />
+      <hr />
+      <h1>Outlines</h1>
+      <p>
+        An
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline"
+          target="_blank"
+          ><code>outline</code></a
+        >
+        is a line drawn outside the element's border.
+      </p>
+      <p>
+        It's basically like having two borders. Is nice for vosual improvement
+      </p>
+      <img
+        src="images/Screenshot 2022-10-11 at 22-31-23 CSS Outline Properties.png"
+        alt="Outline"
+      />
+    </div>
+    <p>
+      An code example with
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline-offset"
+        target="_blank"
+        ><code>offset</code></a
+      >
+      in CSS style.
+    </p>
+    <div class="box"></div>
+    <div class="outline">
+      <img src="images/outline with offset.png" class="offset" alt="outline" />
+    </div>
+    <p>An code example without offset in CSS style.</p>
+    <div class="box1"></div>
+    <div class="out-offset">
+      <img
+        src="images/outline without offset.png"
+        class="without"
+        alt="without offset"
+      />
+    </div>
+    <hr />
+    <div>
+      <h1>Text-Shadow</h1>
+      <p>
+        The
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow"
+          target="_blank"
+          ><code>text-shadow</code></a
+        >
+        CSS property adds shadows to text. It accepts a comma-separated list of
+        shadows to be applied to the text and any of its decorations. Each
+        shadow is described by some combination of X and Y offsets from the
+        element, blur radius, and color.
+      </p>
+      <div class="text-s">Text-shadow.</div>
+      <div class="div-text-s">
+        <img
+          src="images/text-shadow.png"
+          class="img-text-s"
+          alt="text-shadow"
+        />
+      </div>
+    </div>
+    <hr />
+    <div></div>
   </body>
 </html>
