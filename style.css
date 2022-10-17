@@ -130,6 +130,17 @@ div.block {
   box-shadow: 6px 6px 15px inset #444444;
 }
 
+.test {
+  width: 40%;
+  height: 300px;
+  border: 2px solid green;
+  background-image: url("images/job.jpg");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50% 0 50% 0;
+  box-shadow: 6px 6px 15px inset #444444;
+}
+
 /*.css {
   background-image: url("images/job.jpg");
   background-size: auto;

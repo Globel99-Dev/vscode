@@ -305,9 +305,87 @@
     </p>
     <p>
       <strong>Note:</strong> Elements next to a floating element will flow
-      around it. To avoid this, use the clear property or the clearfix hack (see
-      example at the bottom of this page).
+      around it. To avoid this, use the clear property or the clearfix hack.
     </p>
     <hr />
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+      target="_blank"
+      ><h1>CSS Positioning</h1></a
+    >
+
+    <p>
+      The position CSS property sets how an element is positioned in a document.
+      The top, right, bottom, and left properties determine the final location
+      of positioned elements.
+    </p>
+    <h2><code>static</code></h2>
+    <p>
+      The element is positioned according to the normal flow of the document.
+      The top, right, bottom, left, and z-index properties have no effect. This
+      is the default value.
+    </p>
+    <h2><code>relative</code></h2>
+    <p>
+      The element is positioned according to the normal flow of the document,
+      and then offset relative to itself based on the values of top, right,
+      bottom, and left. The offset does not affect the position of any other
+      elements; thus, the space given for the element in the page layout is the
+      same as if position were static.
+    </p>
+    <img src="images/relative.png" alt="relative position" />
+    <p>
+      This value creates a new stacking context when the value of z-index is not
+      auto. Its effect on table-*-group, table-row, table-column, table-cell,
+      and table-caption elements is undefined.
+    </p>
+    <h2><code>absolute</code></h2>
+    <p>
+      The element is removed from the normal document flow, and no space is
+      created for the element in the page layout. It is positioned relative to
+      its closest positioned ancestor, if any; otherwise, it is placed relative
+      to the initial containing block. Its final position is determined by the
+      values of top, right, bottom, and left.
+    </p>
+    <img src="images/absolute.png" alt="absolute position" />
+    <p>
+      This value creates a new stacking context when the value of z-index is not
+      auto. The margins of absolutely positioned boxes do not collapse with
+      other margins.
+    </p>
+    <h2><code>fixed</code></h2>
+    <p>
+      The element is removed from the normal document flow, and no space is
+      created for the element in the page layout. It is positioned relative to
+      the initial containing block established by the viewport, except when one
+      of its ancestors has a transform, perspective, or filter property set to
+      something other than none (see the CSS Transforms Spec), or the
+      will-change property is set to transform, in which case that ancestor
+      behaves as the containing block. (Note that there are browser
+      inconsistencies with perspective and filter contributing to containing
+      block formation.) Its final position is determined by the values of top,
+      right, bottom, and left.
+    </p>
+    <img src="images/Fixed.png" alt="fixed position" />
+    <p>
+      This value always creates a new stacking context. In printed documents,
+      the element is placed in the same position on every page.
+    </p>
+    <h2><code>sticky</code></h2>
+    <p>
+      The element is positioned according to the normal flow of the document,
+      and then offset relative to its nearest scrolling ancestor and containing
+      block (nearest block-level ancestor), including table-related elements,
+      based on the values of top, right, bottom, and left. The offset does not
+      affect the position of any other elements.
+    </p>
+    <img src="images/sticky.png" alt="" />
+    <img src="images/sticky2.png" alt="" />
+    <p>
+      This value always creates a new stacking context. Note that a sticky
+      element "sticks" to its nearest ancestor that has a "scrolling mechanism"
+      (created when overflow is hidden, scroll, auto, or overlay), even if that
+      ancestor isn't the nearest actually scrolling ancestor.
+    </p>
   </body>
 </html>
