@@ -18,10 +18,11 @@
       width: 400px;
       height: 400px;
       text-align: center;
-      padding-top: 196px;
+      padding-top: 192px;
       text-transform: uppercase;
       color: lightgray;
-      position:fixed;
+      position: sticky;
+      overflow: hidden;
     }
 
     .box {
@@ -46,11 +47,27 @@
       text-transform: capitalize;
       text-shadow: 4px 4px green;
       font-size: 40px;
-      ima
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
     }
   </style>
   <body>
-    <div class="box">Cacerola</div>
-    <div class="box1">Paella</div>
+    <div class="box">
+      <a
+        href="https://www.google.com/search?client=firefox-b-d&q=cacerola"
+        target="_blank"
+        >Cacerola</a
+      >
+    </div>
+    <div class="box1">
+      <a
+        href="https://www.google.com/search?client=firefox-b-d&q=paella"
+        target="_blank"
+        >Paella</a
+      >
+    </div>
   </body>
 </html>
