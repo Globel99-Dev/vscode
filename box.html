@@ -22,36 +22,43 @@
       text-transform: uppercase;
       color: lightgray;
       position: sticky;
-      overflow: hidden;
+
+      overflow: auto;
+    }
+
+    .box,
+    .box1 {
+      background-size: cover;
+      background-position: center;
     }
 
     .box {
-      background-size: cover;
-      background-position: center;
       background-image: url(images/cacerola.webp);
     }
 
     .box1 {
-      background-size: cover;
-      background-position: center;
       background-image: url(images/paella.webp);
     }
 
     .box:hover {
-      text-transform: capitalize;
       text-shadow: 4px 4px red;
-      font-size: 40px;
     }
 
     .box1:hover {
-      text-transform: capitalize;
       text-shadow: 4px 4px green;
-      font-size: 40px;
     }
 
     a {
       color: white;
       text-decoration: none;
+    }
+
+    a:hover {
+      text-transform: capitalize;
+      font-size: 40px;
+    }
+
+    a .box1:hover {
     }
   </style>
   <body>
