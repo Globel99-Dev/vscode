@@ -5,7 +5,14 @@
     <title>Card</title>
   </head>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+    body {
+      background-color: hsl(30, 38%, 92%);
+    }
+
     .container {
+      text-align: center;
     }
 
     .foto,
@@ -15,19 +22,47 @@
 
     .foto {
       background-size: cover;
-      background-image: url("images/image-product-mobile.jpg");
-      width: 343px;
-      height: 240px;
+      background-image: url("images/image-product-desktop.jpg");
+      width: 300px;
+      height: 450px;
+      border-radius: 5px 0 0 5px;
     }
 
     .texto {
-      width: 343px;
+      font-family: "Montserrat", sans-serif;
+      width: 300px;
+      text-align: left;
+      border-radius: 0 5px 5px 0;
+      background-color: white;
+      padding: 20px;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .nome {
+      font-family: "Fraunces", serif;
     }
   </style>
   <body>
     <div class="container">
       <div class="foto"></div>
-      <div class="texto">Hello</div>
+      <div class="texto">
+        <p>PERFUME</p>
+        <p><span class="nome">Essence Eau De Parfum</span></p>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the house of CHANEL.
+        </p>
+        <p>
+          <span class="prize">$149.99</span>
+          <span class="noprize">$169.99</span>
+        </p>
+        <button><a href="#">Add to cart</a></button>
+      </div>
     </div>
   </body>
 </html>
