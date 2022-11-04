@@ -35,6 +35,7 @@
     .texto {
       font-family: "Montserrat", sans-serif;
       width: 300px;
+      height: 450px;
       text-align: left;
       border-radius: 0 5px 5px 0;
       background-color: white;
@@ -46,10 +47,38 @@
 
     p {
       font-size: 14px;
+      color: hsl(228, 12%, 48%);
+    }
+    .nome,
+    .prize {
+      font-family: "Fraunces", serif;
     }
 
     .nome {
-      font-family: "Fraunces", serif;
+      font-weight: 700px;
+      font-size: 40px;
+      color: hsl(212, 21%, 14%);
+    }
+    .prize {
+      color: hsl(158, 36%, 37%);
+      font-size: 40px;
+    }
+    .noprize {
+      font-family: "Montserrat", sans-serif;
+      text-decoration: line-through;
+    }
+    button {
+      background-color: hsl(158, 36%, 37%);
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      height: 50px;
+    }
+    a {
+      color: hsl(0, 0%, 100%);
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 22px;
     }
   </style>
   <body>
@@ -57,7 +86,7 @@
       <div class="foto"></div>
       <div class="texto">
         <p>PERFUME</p>
-        <p><span class="nome">Essence Eau De Parfum</span></p>
+        <p><span class="nome">Gabrielle Essence Eau De Parfum</span></p>
         <p>
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the house of CHANEL.
@@ -66,7 +95,9 @@
           <span class="prize">$149.99</span>
           <span class="noprize">$169.99</span>
         </p>
-        <button><a href="#">Add to cart</a></button>
+        <button>
+          <a href="#"><img src="images/icon-cart.svg" alt="" /> Add to cart</a>
+        </button>
       </div>
     </div>
   </body>
